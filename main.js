@@ -32,7 +32,7 @@ button.addEventListener('click', () => {
 letters[7].onanimationend = () => {
     control.setAttribute("disabled", "true");
     control.style.opacity = "0.2";
-    control.style.cursor = "no-drop";
+    control.style.cursor = "default";
 };
 
 for (let i = 0; i < letters.length; i++) {

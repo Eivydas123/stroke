@@ -73,6 +73,7 @@ button {
 }
 
 .classlogo {
+  text-align: center;
   fill: transparent;
   stroke: aqua;
   stroke-width: 2px;
@@ -182,5 +183,16 @@ button {
     -webkit-filter: drop-shadow(-20px 20px 10px aqua);
             filter: drop-shadow(-20px 20px 10px aqua);
   }
+}
+
+.img-wrapper {
+  border: 2px solid yellowgreen;
+  height: 100vh;
+  width: 100%;
+  background: #af1818 url(../prog.jpg) fixed no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-bottom: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

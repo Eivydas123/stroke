@@ -3,140 +3,168 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-color: #333;
-    @include flex();
-    min-height: 100vh;
-    flex-direction: column;
+  background-color: #333;
+  @include flex();
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 button {
-    padding: 10px 13px;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 600;
-    border: 0;
-    border-radius: 4px;
-    color: #fff;
-    background-color: rgb(30, 121, 163);
-    letter-spacing: 2px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
-    outline: none;
-
+  padding: 10px 13px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: rgb(30, 121, 163);
+  letter-spacing: 2px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  outline: none;
 }
 
 .resetdisable {
-    opacity: 0.3;
-    cursor: default;
-
+  opacity: 0.3;
+  cursor: default;
 }
 
 .resetenable {
-    background-color: rgba(65, 157, 199, 0.74);
-    opacity: 1;
-    cursor: pointer;
+  background-color: rgba(65, 157, 199, 0.74);
+  opacity: 1;
+  cursor: pointer;
 
-    &:hover {
-        background-color: rgb(90, 178, 219);
-    }
+  &:hover {
+    background-color: rgb(90, 178, 219);
+  }
 
-    &:active {
-        transform: scale(0.98);
-    }
+  &:active {
+    transform: scale(0.98);
+  }
 }
 
 .control {
-    background-color: rgb(128, 192, 31);
+  background-color: rgb(128, 192, 31);
 
-
-    &:hover {
-        background-color: rgb(85, 124, 27);
-    }
+  &:hover {
+    background-color: rgb(85, 124, 27);
+  }
 }
 
 .classlogo {
-    fill: transparent;
-    stroke: aqua;
-    stroke-width: 2px;
-    margin-left: 100px;
-    animation: shadow 2s 13.5s ease-in forwards;
-    transform: skew(10deg);
-    -webkit-box-reflect: below -42% linear-gradient(to bottom left, transparent 25%, transparent 30%, rgba(0, 0, 0, 0.050));
-    filter: drop-shadow(-2px 4px 2px rgba(55, 156, 214, 0.541)) drop-shadow(0 0 25px rgba(0, 255, 255, 0.37)) drop-shadow(0 0 50px rgba(0, 255, 255, 0.335)) drop-shadow(0 0 100px rgba(0, 255, 255, 0.253)) drop-shadow(0 0 200px rgba(0, 255, 255, 0.233));
+  text-align: center;
+  fill: transparent;
+  stroke: aqua;
+  stroke-width: 2px;
+  margin-left: 100px;
+  animation: shadow 2s 13.5s ease-in forwards;
+  transform: skew(10deg);
+  -webkit-box-reflect: below -42% linear-gradient(to bottom left, transparent
+        25%, transparent 30%, rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(-2px 4px 2px rgba(55, 156, 214, 0.541))
+    drop-shadow(0 0 25px rgba(0, 255, 255, 0.37))
+    drop-shadow(0 0 50px rgba(0, 255, 255, 0.335))
+    drop-shadow(0 0 100px rgba(0, 255, 255, 0.253))
+    drop-shadow(0 0 200px rgba(0, 255, 255, 0.233));
 }
 
 .classlogo .path:nth-child(1) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime .2s linear forwards, fill $filltime 11.7s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 0.2s linear forwards,
+    fill $filltime 11.7s linear forwards;
 }
 
 .classlogo .path:nth-child(2) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime 1.7s linear forwards, fill $filltime 11.9s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 1.7s linear forwards,
+    fill $filltime 11.9s linear forwards;
 }
 
 .classlogo .path:nth-child(3) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime 3.2s linear forwards, fill $filltime 12.1s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 3.2s linear forwards,
+    fill $filltime 12.1s linear forwards;
 }
 
 .classlogo .path:nth-child(4) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime 4.7s linear forwards, fill $filltime 12.3s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 4.7s linear forwards,
+    fill $filltime 12.3s linear forwards;
 }
 
 .classlogo .path:nth-child(5) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime 5.7s linear forwards, fill $filltime 12.5s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 5.7s linear forwards,
+    fill $filltime 12.5s linear forwards;
 }
 
 .classlogo .path:nth-child(6) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime 7.2s linear forwards, fill $filltime 12.7s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 7.2s linear forwards,
+    fill $filltime 12.7s linear forwards;
 }
 
 .classlogo .path:nth-child(7) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime 8.7s linear forwards, fill $filltime 12.9s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 8.7s linear forwards,
+    fill $filltime 12.9s linear forwards;
 }
 
 .classlogo .path:nth-child(8) {
-    stroke-dasharray: var(--i);
-    stroke-dashoffset: var(--i);
-    animation: draw $drawtime 10.2s linear forwards, fill $filltime 13.1s linear forwards;
+  stroke-dasharray: var(--i);
+  stroke-dashoffset: var(--i);
+  animation: draw $drawtime 10.2s linear forwards,
+    fill $filltime 13.1s linear forwards;
 }
 
-
 @keyframes shadow {
-    to {
-        filter: drop-shadow(-1px 1px aqua) drop-shadow(-2px 2px aqua) drop-shadow(-3px 3px aqua) drop-shadow(-4px 4px 2px rgb(187, 57, 57)) drop-shadow(-5px 5px 2px rgb(187, 57, 57)) drop-shadow(0px 0px 30px rgba(187, 57, 57, 0.548))drop-shadow(0px 0px 30px rgba(187, 57, 57, 0.548)) drop-shadow(0 0 50px rgba(0, 255, 255, 0.335)) drop-shadow(0 0 100px rgba(0, 255, 255, 0.335));
-    }
+  to {
+    filter: drop-shadow(-1px 1px aqua) drop-shadow(-2px 2px aqua)
+      drop-shadow(-3px 3px aqua) drop-shadow(-4px 4px 2px rgb(187, 57, 57))
+      drop-shadow(-5px 5px 2px rgb(187, 57, 57))
+      drop-shadow(0px 0px 30px rgba(187, 57, 57, 0.548))
+      drop-shadow(0px 0px 30px rgba(187, 57, 57, 0.548))
+      drop-shadow(0 0 50px rgba(0, 255, 255, 0.335))
+      drop-shadow(0 0 100px rgba(0, 255, 255, 0.335));
+  }
 }
 
 @keyframes draw {
-    to {
-        stroke-dashoffset: 0;
-    }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @keyframes fill {
-    to {
-        fill: aqua;
-        filter: drop-shadow(-20px 20px 10px aqua);
-    }
+  to {
+    fill: aqua;
+    filter: drop-shadow(-20px 20px 10px aqua);
+  }
+}
+//test.html
+
+.img-wrapper {
+  border: 2px solid yellowgreen;
+  height: 100vh;
+  width: 100%;
+  background: rgb(175, 24, 24) url(../prog.jpg) fixed no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin-bottom: 100vh;
 }
